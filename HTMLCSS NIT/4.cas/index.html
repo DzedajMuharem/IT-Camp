@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4.cas</title>
+  </head>
+  <body>
+    <h1 align="center">Danas radimo forme</h1>
+    <form action="https://www.youtube.com/" align="center">
+      <!-- action nas vodi negde kad kliknemo submit dugme -->
+      <label for="username">Unesite vas username:</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Username"
+        required
+      />
+      <br />
+      <br />
+      <!-- U label for stavljamo id inputa za kojeg ce labe lda bude vezan -->
+      <label for="email">Unesite vasu email adresu:</label>
+      <input type="email" name="email" id="email" placeholder="Email" />
+      <br />
+      <br />
+      <label for="pass">Unesite lozinku:</label>
+      <input type="password" name="password" id="pass" />
+      <br /><br />
+      <label for="age">Unesite starost:</label>
+      <input type="number" name="age" id="age" min="15" max="120" step="3" />
+      <br />
+      <br />
+      <label for="birthdate">Unesite datum rodjenja:</label>
+      <input
+        type="date"
+        name="birthdate"
+        id="birthdate"
+        min="1950-01-01"
+        max="2015-12-31"
+      />
+      <br />
+      <br />
+
+      Omiljeno voce: <br />
+      <label for="Banana">Banana</label>
+      <input type="checkbox" name="banana" id="banana" checked /> <br />
+      <label for="Jagode">Jagode</label>
+      <input type="checkbox" name="jagode" id="Jagode" /> <br />
+      <label for="Ananas">Ananas</label>
+      <input type="checkbox" name="Ananas" id="Ananas" /> <br />
+      <label for="Kivi">Kivi</label>
+      <input type="checkbox" name="Kivi" id="Kivi" /> <br />
+      <br />
+
+      Pol: <br />
+      <label for="man">M</label>
+      <input type="radio" name="gender" id="man" value="Man" />
+      <label for="women">Z</label>
+      <input type="radio" name="gender" id="women" value="Womena" /> <br />
+      <br />
+
+      <label for="note">Napomena:</label>
+      <textarea name="note" id="note" cols="30" rows="10"></textarea> <br />
+      <br />
+
+      <label for="file">Unesite zeljenu datoteku:</label>
+      <input type="file" name="datoteka" id="file" /> <br /><br />
+      <label for="phone">Unesite broj telefona</label>
+      <input type="tel" name="phone" id="phone" /> <br /><br />
+      <label for="color">Unesite omiljenu boju:</label>
+      <input type="color" name="color" id="color" /> <br /><br />
+      <label for="eyeColor">Unesite boju ociju</label>
+      <select name="Eye" id="eyeColor">
+        <option value="Zelena">Zelena</option>
+        <option value="Braon">Braon</option>
+        <option value="Plava" selected>Plava</option>
+      </select>
+      <br /><br />
+
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+      <!-- ako zelimo funkcionalost da damo dugmetu moramo staviti neki type, ako nema type onda sluzi samo kao estetika -->
+    </form>
+  </body>
+</html>

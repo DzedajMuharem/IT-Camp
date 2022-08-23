@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.div1 {
+  background-color: blue;
+  width: 300px;
+  height: 200px;
+  /* overflow: visible; defaultna vrednost */
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  overflow: auto;
+}
+
+.div2 {
+  background-color: blueviolet;
+  width: 300px;
+  height: 250px;
+}
+
+.div2 p {
+  /* font-size: large; */
+  font-size: 22px;
+  /* text-align: right; */
+  text-align: justify;
+  text-align-last: right;
+}

@@ -1,0 +1,26 @@
+h1 {
+  color: blue;
+}
+/* h1 bi bio selector  color property a boja value, property i value cine deklaraciju */
+
+.main h1 {
+  color: green;
+}
+
+.main > p {
+  color: blue;
+}
+
+div + p {
+  color: darkred;
+}
+/* Plus predstavlja prvi element nakon diva a ne svaki sledeci. */
+
+#Childdiv {
+  background-color: blueviolet;
+}
+
+.ChilddivCLASS {
+  background-color: brown;
+}
+/* Ako nekom html tagu dodelimo klasu i id i primenimo stilove koji nisu isti prednost primene ima id u odnosu na class  */

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vezbanje</title>
+  </head>
+  <body>
+    <h1 align="center">Login forma</h1>
+    <form action="https://www.youtube.com/" align="center">
+      <label for="username">Unesite vase ime:</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Username"
+        required
+      />
+      <br />
+      <br />
+      <label for="email">Unesite vas email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required
+        placeholder="E-mail"
+      />
+      <br /><br />
+      <label for="pass">Unesite vasu lozinku:</label>
+      <input
+        type="password"
+        name="password"
+        id="pass"
+        placeholder="password"
+        required
+      />
+      <br /><br />
+      <label for="birthdate">Unesite vase godine</label>
+      <input
+        type="date"
+        name="birthdate"
+        id="birthdate"
+        required
+        min="1950-01-01"
+        max="2015-01-01"
+      />
+      <br /><br />
+      <label for="Komp">Komp</label>
+      <input type="checkbox" name="Komp" id="Komp" checked />
+      <br />
+      <label for="Ps">Ps</label>
+      <input type="checkbox" name="Ps" id="Ps" /> <br />
+      <label for="Xbox">Xbox</label>
+      <input type="checkbox" name="xbox" id="Xbox" checked /> <br />
+      <br />
+      <p>Izaberite Pol:</p>
+      <label for="M">M</label>
+      <input type="radio" name="gender" id="M" />
+      <label for="Z">Z</label>
+      <input type="radio" name="gender" id="Z" /> <br /><br />
+      <label for="napomena">Napomena</label>
+      <textarea name="napmena" id="napomena" cols="30" rows="3"></textarea>
+      <br /><br />
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

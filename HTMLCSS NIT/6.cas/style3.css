@@ -1,0 +1,16 @@
+.main {
+  width: 500px;
+  height: 400px;
+  background-color: aquamarine;
+  overflow: auto;
+}
+.main h2 {
+  color: #8b0000;
+  text-align: center;
+}
+.main p {
+  color: darkblue;
+  text-align: center;
+  font-size: 20px;
+}
+/* izbegavaj da koristis imena kod boja, koristi sifru il neki kod */

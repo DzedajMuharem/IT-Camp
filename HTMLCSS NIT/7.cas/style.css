@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+}
+.main {
+  width: 400px;
+  height: 300px;
+  background-color: #ffebcd;
+  border: 3px solid #381111;
+  /* border: 3px dashed #381111; */
+  /* border: 3px dotted #381111; */
+  /* border: 3px double #381111; */
+  /* border-radius: 10px 20px 30px 40px; */
+  /* border-radius: 10px; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  padding: 30px;
+  /* margin: 30px;  */
+  /* margin-top: 20px;
+  margin-left: 40px;
+  margin-bottom: 25px; */
+  /* margin: 10px 20px 30px 40px; */
+  /* Vrednosti idu kao kazljka na satu 10px gore 20px desno 30px dole 40px levo */
+  /* Ako imamo 4 vrijednosti za svojstvo margin ili padding. Shvatanje cssa je sledece. 
+  Prva vrednost se odnosi na  margin-top, 
+  druga na margin-right, 
+  trecavrednost se odnosi na margin-bottom, 
+  cetvrta na margin-left*/
+  /* margin: 20px 40px; */
+  /* Prva vrednost se odnosi na margine top i bottom, druga na margin right i left */
+  /* margin: 10px 20px 30px; */
+  /* prva vrednost se ondnosi na margin top drga na margin rigth i lfet treca na margine bottom */
+  margin: 15px auto;
+  /* auto se odnosi na horizontalu */
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 1);
+  /* box-shadow: -3px -3px 9px rgba(0, 0, 0, 1); -Ako zelimo da se efekat postigne na vrh i levu stranu*/
+}
+button {
+  padding: 10px;
+  /* moze da se koristi width i height (preporuceno je) za povecanje dugmeta */
+  margin-left: 500px;
+}
+p {
+  text-align: justify;
+  text-align-last: center;
+  text-indent: 25px;
+}
+p:hover {
+  background-color: peru;
+  color: blue;
+}

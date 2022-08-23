@@ -1,0 +1,9 @@
+.main {
+  background: #293d7e;
+  width: 250px;
+  height: 100px;
+  top: 170px;
+  left: 50px;
+  position: fixed;
+  clip-path: polygon(18% 0%, 50% 60%, 85% 4%, 101% 3%, 50% 90%, 2% 1%);
+}
