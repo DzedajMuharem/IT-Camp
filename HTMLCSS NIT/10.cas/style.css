@@ -1,0 +1,36 @@
+body {
+  font-family: "Aboreto", cursive;
+}
+/* 2. nacin primene eksternih stilova */
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+
+.main {
+  margin: 20px auto;
+  width: 400px;
+  height: 500px;
+  background-color: blanchedalmond;
+  text-align: center;
+  padding: 15px;
+}
+
+.main h1 {
+  text-transform: capitalize;
+}
+.main p {
+  text-indent: 15px;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.ikonica-tekst {
+  margin-left: 10px;
+}
+#icon {
+  font-size: 25px;
+  color: red;
+  background-color: aqua;
+}
+#icon:nth-of-type(2) {
+  color: black;
+  background-color: transparent;
+}
