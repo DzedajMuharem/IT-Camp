@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: aqua;
+}
+.main {
+  width: 400px;
+  height: 600px;
+  background-color: #bdc3c7;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  margin: 20px auto;
+}
+
+img {
+  width: 400px;
+  height: 210px;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  margin-bottom: 15px;
+}
+
+.main .adresa {
+  font-size: 22px;
+  margin-left: 10px;
+  color: #232849;
+}
+
+#ikonica {
+  padding: 10px;
+}
+.grad {
+  font-size: 22px;
+  padding: 10px;
+}
+
+.tekst-ikonice {
+  font-size: 25px;
+  margin-left: 5px;
+}
+.grad {
+  margin-bottom: 20px;
+}
+.hover:hover {
+  background-color: blue;
+  width: 400px;
+  transition: 0.5s;
+}
+.za-vise {
+  font-size: 14px;
+  padding: 5px;
+}
