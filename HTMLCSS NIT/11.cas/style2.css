@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+/* 
+.main:nth-of-type(1) {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  background-color: #7fffd4;
+  overflow: auto;
+  padding: 10px;
+}
+
+.main:nth-of-type(2) {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  background-color: #ea7fff;
+}
+.main:nth-of-type(3) {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  background-color: #dfff7f;
+} */
+
+.main {
+  /* margin: auto; */
+  width: 300px;
+  height: 200px;
+  background-color: #7fffd4;
+  padding: 10px;
+  overflow: hidden;
+  /* display: block; defaultna vrednost */
+  /* display: inline; ako je display inline onda gubimo mogucnost definisanja odredjenih stilova, kao sto su sirina, visina,
+  margina, padding itd */
+  display: inline-block;
+}
+
+.main:nth-of-type(2) {
+  /* display: none; ovo je jedan od nacina da sakrijemo sadrzaj na stranici */
+  /* visibility: hidden; ovo ce skariti sadrzaj, ali i dalje zauzima prosotr na stranici */
+  background-color: blanchedalmond;
+}
+
+.main p {
+  line-height: 25px;
+}
+.second {
+  margin: auto;
+  width: 700px;
+  height: 450px;
+  background-image: url(./1400935880311.jpeg);
+  /* background-repeat: no-repeat; */
+  /* background-size: contain; */
+  /* background-size: cover; */
+}
