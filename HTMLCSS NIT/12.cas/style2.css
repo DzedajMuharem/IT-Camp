@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+}
+.header {
+  height: 20vh;
+  width: 100vw;
+  background-color: beige;
+}
+.header .img {
+  width: 10%;
+  height: 90%;
+}
+.header .links {
+  display: inline-block;
+}
