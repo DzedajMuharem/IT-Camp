@@ -1,0 +1,23 @@
+* {
+  margin: 0%;
+}
+.first {
+  width: 50%;
+  height: 50vh;
+  background-color: rgb(0, 0, 255, 0.5);
+  /* dodat je opacity samo na background color  */
+  background-color: rgb(0, 0, 255);
+  opacity: 0.5;
+  /* Doadat je opacity na ceo kontejner */
+}
+.second {
+  width: 50%;
+  height: 50vh;
+  background-image: url(./1400935880311.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.5;
+}
+.second p {
+  opacity: 1 !important;
+}
