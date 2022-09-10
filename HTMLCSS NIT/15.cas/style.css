@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.main {
+  margin: 2rem auto;
+  width: 95%;
+  height: 250vh;
+  background-color: #ffe4c4;
+  position: relative;
+}
+.box1 {
+  width: 120px;
+  height: 120px;
+  background-color: blue;
+  position: static;
+  /* defaultna vrednost */
+  position: relative;
+  top: 70px;
+  left: 50%;
+  /* bottom: 50px; */
+  /* right: 50px; */
+  /* Realtiv ostavlja rezervisan proator na kom se nalazio(Tu se nece automatski pomeriti sledeci element) */
+  /* Dobijamo mogucnost pomeranja elemnta sa svih strana u odnosu na parent element. */
+}
+.box2 {
+  width: 120px;
+  height: 120px;
+  background-color: blueviolet;
+  position: absolute;
+  /* opacity: 0; */
+  top: 0%;
+  right: 0%;
+  /* Absolute ne cuva prostor na kom se nalazio (tu ce se autoamtski nacu sledeci element koji je
+  ispod onog sa position absolutom) */
+  /* Dobijamo mogucnost pomeranja sa svih strana */
+  /* parent element mora imati position koji nije static kako bi pomeranje bilo relativno u odnosu na njega a ne 
+  na celu stranicu */
+}
+.box3 {
+  width: 120px;
+  height: 120px;
+  background-color: chartreuse;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  /* fixed ne cuva prostor na kom se nalazi (tu ce se autoamtski nacu sledeci element koji je 
+  ispod onog sa position absolutom) */
+  /* Dobijamo mogucnost pomeranja sa svih strana */
+  /* relativan je u odnosu na celu stranicu ne gleda parent element */
+}
+.box4 {
+  width: 120px;
+  height: 120px;
+  background-color: chocolate;
+  position: sticky;
+  left: 400px;
+  top: 400px;
+  z-index: 10;
+  /* Sticky ostavlja rezervisan proator na kom se nalazio(Tu se nece automatski pomeriti sledeci element) */
+  /* Dobijamo mogucnost pomeranja elemnta sa svih strana u odnosu na parent element. */
+}
+.box5 {
+  width: 120px;
+  height: 120px;
+  background-color: darkgreen;
+  position: relative;
+  z-index: 20;
+}
