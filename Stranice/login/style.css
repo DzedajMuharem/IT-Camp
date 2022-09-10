@@ -1,0 +1,47 @@
+* {
+  margin: 0%;
+}
+.leva {
+  width: 40%;
+  height: 100vh;
+  float: left;
+}
+
+.leva .picon {
+  display: inline-block;
+}
+.head {
+  margin-top: 50px;
+  margin-left: 150px;
+}
+.leva h1 {
+  margin-left: 33%;
+  margin-top: 20%;
+}
+.leva .ispodh {
+  color: #9e9999;
+  position: relative;
+  left: 10%;
+  text-align: center;
+}
+.leva .google {
+  margin-left: 50%;
+  font-size: 15px;
+}
+.leva .up {
+  margin-left: 50%;
+  font-size: 15px;
+}
+.leva .pismo {
+  margin-left: 50%;
+  font-size: 15px;
+}
+.leva .cont {
+  margin-left: 50%;
+  font-size: 15px;
+  width: 400px;
+}
+.leva .kraj {
+  margin-left: 50%;
+  font-size: 15px;
+}
