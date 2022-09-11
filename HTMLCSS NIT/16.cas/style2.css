@@ -1,0 +1,90 @@
+* {
+  margin: 0%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: lightgreen;
+  height: 110vh;
+}
+.header {
+  width: 100%;
+  height: 13vh;
+  background-color: darkolivegreen;
+  position: sticky;
+  top: 0%;
+  z-index: 20;
+}
+.header h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: white;
+  position: relative;
+  top: 30px;
+  padding: 10px;
+}
+.header li {
+  display: inline;
+  position: relative;
+  left: 45%;
+  font-size: 20px;
+  margin: 10px;
+  text-transform: uppercase;
+}
+.header a {
+  color: gray;
+  text-decoration: none;
+}
+.prvaleva {
+  float: left;
+  margin-top: 20vh;
+  margin-left: 10%;
+}
+.prvaleva h1 {
+  margin-bottom: 20px;
+}
+.prvadesna {
+  float: right;
+  margin-top: 20vh;
+  margin-right: 10%;
+}
+.prvadesna h1 {
+  margin-bottom: 20px;
+}
+.prvadesna li {
+  font-size: 20px;
+  margin: 10px;
+}
+.drugaleva {
+  float: left;
+  width: 400px;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  /* clear: both; */
+}
+.drugaleva img {
+  border-radius: 10%;
+  margin: 5px;
+}
+.drugadesna {
+  float: right;
+  /* clear: both; */
+  width: 580px;
+  margin-right: 10%;
+  margin-top: 90px;
+  margin-bottom: 120px;
+  text-indent: 150px;
+}
+.footer {
+  width: 100%;
+  height: 15vh;
+  background-color: gray;
+  position: relative;
+  top: 150%;
+}
+.footer h1 {
+  text-align: center;
+  position: relative;
+  top: 30%;
+  right: 13%;
+}
