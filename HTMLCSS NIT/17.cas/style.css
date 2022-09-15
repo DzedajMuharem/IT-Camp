@@ -1,0 +1,57 @@
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main {
+  width: 75%;
+  height: 550px;
+  background-color: #7fffd4;
+  margin: auto;
+  display: flex;
+  /* HORIZONTALNO poravnjanje */
+  /* justify-content: start; defaultna vrednost */
+  /* justify-content: flex-start; isto kao i samo start */
+  /* justify-content: center; */
+  /* justify-content: end; */
+  justify-content: space-between;
+  /* justify-content: space-around; Ne ide do ivice kao space between vec ostavlja porsotr sa svih strana */
+  /* justify-content: space-evenly; */
+
+  /* VERTIKALNO poravnjanje */
+  /* align-items: flex-start; defaultna vrednost */
+  align-items: center;
+  /* align-items: flex-end; */
+}
+.box1 {
+  width: 150px;
+  height: 150px;
+  background-color: #1616cd;
+  align-self: flex-start;
+}
+.box2 {
+  width: 150px;
+  height: 150px;
+  background-color: #1ba51b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box3 {
+  width: 150px;
+  height: 150px;
+  background-color: #b62828;
+  align-self: flex-end;
+}
+.links {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+}
+.links a {
+  text-decoration: none;
+  color: #6e6e25;
+  font-size: larger;
+}

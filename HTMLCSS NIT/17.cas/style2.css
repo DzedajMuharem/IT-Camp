@@ -1,0 +1,49 @@
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main {
+  margin: auto;
+  width: 70%;
+  height: 550px;
+  background-color: aquamarine;
+  display: flex;
+  /* flex-wrap: nowrap; defaultna vrednost */
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Ordej svojstvo je omoguceno u child kontejneru. ali je neophodno podesiti order
+svakom child kontejneru kako bi se primenilo redjanje na pravi nacin
+*/
+
+.box1 {
+  flex-basis: 150px;
+  height: 150px;
+  background-color: blue;
+  /* order: 3; */
+  /* flex-basis: ; = width: ; */
+}
+.box2 {
+  flex-basis: 150px;
+  height: 150px;
+  background-color: #1ba51b;
+  /* order: 4; */
+}
+.box3 {
+  flex-basis: 150px;
+  height: 150px;
+  background-color: red;
+  /* order: 1; */
+  overflow: hidden;
+}
+.box4 {
+  flex-basis: 150px;
+  height: 150px;
+  background-color: black;
+  /* order: 2; */
+}
