@@ -1,0 +1,171 @@
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+}
+.header .inheader {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+}
+.header .inheader li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.header .inheader li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 5px;
+  margin-right: 50px;
+  font-size: large;
+}
+.header .h1 {
+  position: relative;
+  left: -150px;
+  color: white;
+  font-weight: bold;
+}
+.header .levohedaer {
+  position: relative;
+  right: -150px;
+}
+
+.leva {
+  width: 60%;
+  display: flex;
+  position: relative;
+  left: 250px;
+  top: 100px;
+}
+.leva .box1 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(208, 199, 199);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  justify-content: space-around;
+}
+.leva .box1 h1 {
+  font-size: 20px;
+  margin-bottom: -30px;
+  margin-top: -30px;
+}
+.leva .box1 p {
+  text-align: center;
+}
+.leva .box1 i {
+  padding-top: 20px;
+}
+.leva .box2 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(208, 199, 199);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  justify-content: space-around;
+}
+.leva .box2 h1 {
+  font-size: 20px;
+  margin-bottom: -30px;
+  margin-top: -30px;
+}
+.leva .box2 p {
+  text-align: center;
+}
+.leva .box2 i {
+  padding-top: 20px;
+}
+.leva .box3 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(208, 199, 199);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  justify-content: space-around;
+}
+.leva .box3 h1 {
+  font-size: 20px;
+  margin-bottom: -30px;
+  margin-top: -30px;
+}
+.leva .box3 p {
+  text-align: center;
+}
+.leva .box3 i {
+  padding-top: 20px;
+}
+.leva .box4 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(208, 199, 199);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  justify-content: space-around;
+}
+.leva .box4 h1 {
+  font-size: 20px;
+  margin-bottom: -30px;
+  margin-top: -30px;
+}
+.leva .box4 p {
+  text-align: center;
+}
+.leva .box4 i {
+  padding-top: 20px;
+}
+.leva .prvaleva .box1 {
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+
+.leva .drugaleva .box2 {
+  margin-bottom: 30px;
+}
+
+.leva .drugaleva {
+  position: relative;
+  top: 50px;
+  margin-left: 20px;
+}
+.desna {
+  float: right;
+  position: relative;
+  right: 100px;
+  bottom: 300px;
+}
+.desna img {
+  height: 470px;
+}
+
+button {
+  padding: 15px;
+  width: 100px;
+  border-radius: 25%;
+  border: 0;
+}
+button:hover {
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+}

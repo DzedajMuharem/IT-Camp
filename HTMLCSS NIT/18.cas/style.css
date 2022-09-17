@@ -1,0 +1,35 @@
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+.main {
+  margin: auto;
+  width: 75%;
+  height: 550px;
+  background-color: aquamarine;
+  display: flex;
+}
+/* flex-grow svojstvo zauzima celokupnu sirinu parent kontejnera
+Definisanje sirine nekog child elementa bi zapravo predstavljalo minimalnu sirinu tog elementa
+*/
+.box1 {
+  flex-grow: 1;
+  flex-shrink: 3;
+  /* flex-basis: 250px; */
+  height: 150px;
+  background-color: blue;
+}
+.box2 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  /* flex-basis: 250px; */
+  height: 150px;
+  background-color: green;
+}
+.box3 {
+  flex-shrink: 1;
+  flex-grow: 1;
+  /* flex-basis: 250px; */
+  height: 150px;
+  background-color: red;
+}
