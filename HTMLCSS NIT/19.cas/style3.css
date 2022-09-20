@@ -1,0 +1,49 @@
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+.parent {
+  width: 400px;
+  height: 400px;
+  background-color: aquamarine;
+  margin: auto;
+  border-radius: 20%;
+}
+.child {
+  width: 150px;
+  height: 150px;
+  background-color: bisque;
+  border-radius: 50%;
+  /* transition-property: transform; */
+  /* transition-duration: 0.5s; */
+  /* transition-timing-function: ease-in-out; */
+  /* transition-delay: 1s; */
+  /* transition: transform 2s cubic-bezier(0.63, 0.7, 0.74, -0.29) 1s; */
+}
+
+.parent:hover .child {
+  animation: top-to-bottom 2s ease-in-out forwards infinite alternate;
+  /* animation-name: top-to-bottom; */
+  /* animation-duration: 1s; */
+  /* animation-timing-function: ease-in-out; */
+  /* animation-fill-mode: forwards; */
+  /* animation-iteration-count: 3; */
+  /* animation-direction: alternate; */
+}
+@keyframes top-to-bottom {
+  0% {
+    transform: translateY(0px);
+  }
+  33% {
+    background-color: red;
+    transform: translateX(250px);
+  }
+  66% {
+    background-color: green;
+    transform: translateX(250px) translateY(250px);
+  }
+  100% {
+    background-color: blue;
+    transform: translateY(250px);
+  }
+}
