@@ -16,11 +16,11 @@
   /* transition-duration: 0.5s; */
   /* transition-timing-function: ease-in-out; */
   /* transition-delay: 1s; */
-  /* transition: transform 2s cubic-bezier(0.63, 0.7, 0.74, -0.29) 1s; */
+  transition: transform 2s cubic-bezier(0.63, 0.7, 0.74, -0.29) 1s;
 }
 
 .parent:hover .child {
   transform: translateX(250px) translateY(250px);
   background-color: green;
-  transition: transform 2s cubic-bezier(0.63, 0.7, 0.74, -0.29) 1s;
+  /* transition: transform 2s cubic-bezier(0.63, 0.7, 0.74, -0.29) 1s; */
 }
