@@ -233,3 +233,216 @@ button:hover {
     transform: translateX(-96vw) translateY(-8vh);
   }
 }
+@media (max-width: 599px) {
+  .header {
+    width: 200%;
+    height: 100px;
+    background-color: blue;
+    font-size: 20px;
+  }
+  .header .inheader {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+  }
+  .header .inheader li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .header .inheader li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 15px;
+    margin-right: 0;
+    font-size: medium;
+  }
+  .header .h1 {
+    position: relative;
+    left: 0;
+    color: white;
+    font-weight: bold;
+  }
+  .header .levohedaer {
+    position: relative;
+    right: 0;
+  }
+  button {
+    padding: 15px;
+    width: 100px;
+    border-radius: 25%;
+    border: 0;
+    margin-left: 15px;
+  }
+  .leva {
+    width: 60%;
+    display: flex;
+    position: relative;
+    left: 45vw;
+    top: 20vh;
+    font-size: 27px;
+  }
+  .leva .box1 {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(208, 199, 199);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-around;
+  }
+
+  .leva .box2 {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(208, 199, 199);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-around;
+  }
+
+  .leva .box3 {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(208, 199, 199);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-around;
+  }
+
+  .leva .box4 {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(208, 199, 199);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-around;
+  }
+
+  .leva .prvaleva .box1 {
+    margin-bottom: 30px;
+    margin-right: 20px;
+  }
+
+  .leva .drugaleva .box2 {
+    margin-bottom: 30px;
+  }
+  .leva .prvaleva {
+    position: relative;
+    right: -15vw;
+  }
+
+  .leva .drugaleva {
+    position: relative;
+    top: 80vh;
+    right: 65vw;
+    margin-left: 0;
+  }
+  .desna {
+    float: right;
+    position: relative;
+    right: 130px;
+    top: 110vh;
+  }
+  .desna img {
+    height: 470px;
+  }
+  .footer {
+    width: 200%;
+    height: 15vh;
+    background-color: rgb(44, 44, 68);
+    position: relative;
+    top: 255vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1300px) {
+  .header {
+    width: 116%;
+    height: 100px;
+    background-color: blue;
+  }
+  .header .inheader {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+  }
+  .header .inheader li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .header .inheader li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+    margin-right: 0px;
+    font-size: medium;
+  }
+  .header .h1 {
+    position: relative;
+    left: -0;
+    color: white;
+    font-weight: bold;
+    padding-top: 25px;
+  }
+  .header .levohedaer {
+    position: relative;
+    padding-top: 25px;
+    right: -30px;
+  }
+  button {
+    padding: 15px;
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 25%;
+    border: 0;
+  }
+  .desna {
+    float: right;
+    position: relative;
+    right: 100px;
+    top: 32vh;
+  }
+  .desna img {
+    height: 470px;
+  }
+  .leva {
+    width: 60%;
+    display: flex;
+    position: relative;
+    left: 25vw;
+    top: 18vh;
+  }
+  .footer {
+    width: 120%;
+    height: 15vh;
+    background-color: rgb(44, 44, 68);
+    position: relative;
+    top: 130vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+}
