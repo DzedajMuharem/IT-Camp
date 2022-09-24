@@ -1,0 +1,58 @@
+* {
+  margin: 0%;
+}
+.main {
+  margin: auto;
+  width: 80%;
+  /* height: 80vh; */
+  background-color: #7fffd4;
+  display: grid;
+  /* grid-template-columns: 150px 250px; Dve vrednosti predstavljaju da imamo dve kolone */
+  /* grid-template-columns: 1fr 2fr 1fr; Slicno flex-grow gde se redjaju elementi tako sto
+  ce popuniti celu strana elementa
+  */
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: 150px 150px; Svaka vrednost predstavlja visinu za taj red . prva vrednos za pvi red druga za drugi.. */
+  /* grid-auto-rows: 200px; Predstavlja visinu svih redova */
+  grid-auto-rows: minmax(150px, auto);
+  /* grid-gap: 15px; */
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+  grid-template-areas:
+    "header header header"
+    "section section article"
+    "cetiri cetiri article";
+}
+.box1 {
+  /* height: 150px; */
+  background-color: red;
+  grid-area: header;
+}
+.box2 {
+  /* height: 150px; */
+  background-color: green;
+  grid-area: section;
+}
+.box3 {
+  /* height: 150px; */
+  grid-area: article;
+  background-color: blue;
+}
+.box4 {
+  /* height: 150px; */
+  background-color: black;
+  grid-area: cetiri;
+}
+.box5 {
+  /* height: 150px; */
+  background-color: gold;
+}
+.box6 {
+  /* height: 150px; */
+  background-color: pink;
+}
+.box7 {
+  /* height: 150px; */
+  background-color: brown;
+}
