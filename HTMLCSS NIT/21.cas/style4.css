@@ -1,0 +1,90 @@
+* {
+  margin: 0%;
+}
+.main {
+  margin: auto;
+  width: 80%;
+  /* height: 100vh; */
+  /* height: 80vh; */
+  background-color: #7fffd4;
+  display: grid;
+  /* grid-template-columns: 150px 250px; Dve vrednosti predstavljaju da imamo dve kolone */
+  /* grid-template-columns: 1fr 2fr 1fr; Slicno flex-grow gde se redjaju elementi tako sto
+    ce popuniti celu strana elementa
+    */
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: 150px 150px 150px;
+  /* grid-template-rows: 150px 150px; Svaka vrednost predstavlja visinu za taj red . prva vrednos za pvi red druga za drugi.. */
+  /* grid-auto-rows: 200px; Predstavlja visinu svih redova */
+  /* grid-auto-rows: minmax(150px, auto); */
+  grid-auto-rows: 150px;
+  /* grid-gap: 15px; */
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  /* grid-template-areas: 
+    "header header header"
+    "section section article"
+    "cetiri cetiri article";
+    */
+  /* ____________________ */
+  /* Horizontalno poravnjanje */
+
+  /* justify-content: center; */
+  /* justify-content: end; */
+  justify-content: space-around;
+  /* justify-content: space-between; */
+  /* ____________________ */
+  /* VERTIKALNO PORAVNJANJE */
+  /* align-content: center; */
+  /* align-content: end; */
+  align-content: space-around;
+  /* align-content: space-between; */
+
+  /* justify-items: start;   */
+  justify-items: center;
+  /* align-items: center; */
+}
+.box1 {
+  /* height: 150px; */
+  background-color: red;
+  /* grid-area: header; */
+  width: 150px;
+  /* align-self: end; */
+}
+.box2 {
+  /* height: 150px; */
+  background-color: green;
+  /* grid-area: section; */
+  width: 150px;
+}
+.box3 {
+  /* height: 150px; */
+  width: 150px;
+
+  /* grid-area: article; */
+  background-color: blue;
+}
+.box4 {
+  /* height: 150px; */
+  width: 150px;
+
+  background-color: black;
+  /* grid-area: cetiri; */
+}
+.box5 {
+  /* height: 150px; */
+  background-color: gold;
+  width: 150px;
+}
+.box6 {
+  /* height: 150px; */
+  background-color: pink;
+  width: 150px;
+  /* justify-self: end; */
+  /* align-self: start; */
+}
+.box7 {
+  /* height: 150px; */
+  background-color: brown;
+  width: 150px;
+}
