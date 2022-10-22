@@ -54,7 +54,7 @@ console.log(z);
 // z = 23;
 // console.log(z);
 
-// Sve karakteristike vae za promenljive definisane putem let keyword-a u Block Scope-u vazi i za
+// Sve karakteristike vaze za promenljive definisane putem let keyword-a u Block Scope-u vazi i za
 // promenljive definisane putem const keyword-a
 
 const cars = ["Audi", "BMW", "Mercedes"];
