@@ -33,6 +33,11 @@ console.log("------------------------------------");
 // 4.
 // Suma neparnih prirodnih brojeva od 10 do 20
 
-for (let c = 11; c < 21; c += 2) {
-  console.log(c);
+let suma = 0;
+
+for (let c = 10; c < 21; c++) {
+  if (c % 2 !== 0) {
+    suma += c;
+  }
 }
+console.log(suma);
