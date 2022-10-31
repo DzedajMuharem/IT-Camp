@@ -1,3 +1,5 @@
+// Trebaju da se odrade: 4, 5,
+
 // 1.
 //  Write a JavaScript for loop that will iterate from 0 to 15.
 // For each iteration, it will check if the current number is odd or even,
@@ -45,3 +47,48 @@
 
 // 4.
 // Write the java statement that assigns 1 to x if y is greater than 0
+
+// -------------------------------------------------//
+
+// 5.
+// Ispisati dvostruku vrijednost prirodnih brojeva od 10 do 6 unazad.
+
+// -------------------------------------------------//
+
+// 6.
+// Suma dvostruke vrijednosti prvih 5 prirodnih brojeva.
+
+// let sumaf = 0;
+// for (let f = 1; f < 6; f++) {
+//   sumaf += f * 2;
+// }
+// console.log(sumaf);
+
+// // 7.
+// // Suma parnih prirodnih brojeva od k do n.
+
+// let broj1g = +prompt("Unesite prvi broj");
+// let broj2g = +prompt("Unesite drugi broj");
+// let sumag = 0;
+
+// if (isNaN(broj1g) || isNaN(broj2g)) {
+//   console.log("Niste uneli broj");
+// } else if (broj1g < broj2g) {
+//   for (broj1g; broj1g <= broj2g; broj1g++) {
+//     if (broj1g % 2 === 0) {
+//       sumag += broj1g;
+//     }
+//   }
+// } else if (broj1g > broj2g) {
+//   for (broj2g; broj2g <= broj1g; broj2g++) {
+//     if (broj2g % 2 === 0) {
+//       sumag += broj2g;
+//     }
+//   }
+// } else if (broj1g == broj2g) {
+//   console.log("Uneli ste iste brojeve");
+// }
+
+// console.log(sumag);
+
+// -------------------------------------------------//
