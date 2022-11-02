@@ -101,9 +101,10 @@ for (let g = 90; g <= 120; g++) {
     break;
   } else if (g === d) {
     duzinaOgrade = 2 * g + 2 * s + 8 * r;
+    console.log(g);
   }
 }
-console.log("Duzina ograde iznosi: " + duzinaOgrade + "m");
+console.log("Duzina ograde iznosi: " + duzinaOgrade);
 
 // Domaci zadaci:
 // 1.
