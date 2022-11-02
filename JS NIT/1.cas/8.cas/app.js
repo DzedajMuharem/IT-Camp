@@ -75,42 +75,71 @@
 // • s - ширина терена у метрима (45 ≤ s ≤ 90)
 // • r - растојање ограде од терена у метрима (2 ≤ r ≤ 10)
 
-let d = +prompt(
-  "Unesite duzinu terena u metrima (od 90 do 120 ukljucujuci ta dva broja)"
-);
-let s = +prompt(
-  "Unesite sirinu terena u metrima (od 45 do 90, ukljucujuci ta dva broja)"
-);
-let r = +prompt(
-  "Unesite rastojanje ograde od terena u metrima(od 2 do 10, ukljucujuci ta dva broja)"
-);
-let duzinaOgrade = 0;
+// let d = +prompt(
+//   "Unesite duzinu terena u metrima (od 90 do 120 ukljucujuci ta dva broja)"
+// );
+// let s = +prompt(
+//   "Unesite sirinu terena u metrima (od 45 do 90, ukljucujuci ta dva broja)"
+// );
+// let r = +prompt(
+//   "Unesite rastojanje ograde od terena u metrima(od 2 do 10, ukljucujuci ta dva broja)"
+// );
+// let duzinaOgrade = 0;
 
-for (let g = 90; g <= 120; g++) {
-  if (d <= 89 || d >= 121) {
-    console.log("Niste uneli korektne vrijednosti za d");
-    break;
-  } else if (s <= 44 || s >= 91) {
-    console.log("Niste uneli korektne vrijednosti za s");
-    break;
-  } else if (r <= 1 || r >= 11) {
-    console.log("Niste uneli korektne vrijednosti za r");
-    break;
-  } else if (isNaN(d) || isNaN(s) || isNaN(r)) {
-    console.log("Uneli ste nesto sto nije broj");
-    break;
-  } else if (g === d) {
-    duzinaOgrade = 2 * g + 2 * s + 8 * r;
-    console.log(g);
-  }
-}
-console.log("Duzina ograde iznosi: " + duzinaOgrade);
+// for (let g = 90; g <= 120; g++) {
+//   if (d <= 89 || d >= 121) {
+//     console.log("Niste uneli korektne vrijednosti za d");
+//     break;
+//   } else if (s <= 44 || s >= 91) {
+//     console.log("Niste uneli korektne vrijednosti za s");
+//     break;
+//   } else if (r <= 1 || r >= 11) {
+//     console.log("Niste uneli korektne vrijednosti za r");
+//     break;
+//   } else if (isNaN(d) || isNaN(s) || isNaN(r)) {
+//     console.log("Uneli ste nesto sto nije broj");
+//     break;
+//   } else if (g === d) {
+//     duzinaOgrade = 2 * g + 2 * s + 8 * r;
+//     // console.log(g);
+//   }
+// }
+// console.log("Duzina ograde iznosi: " + duzinaOgrade);
 
 // Domaci zadaci:
 // 1.
 // Korisnik unosi 2 broja:
 // Na osnovu toga koji je broj manji, iteracija se vrsi od njega do veceg broja.
 // Izracunati aritmeticku sredinu brojeva koji su deljivi sa 5.
+
+// let broj1 = +prompt("Unesite prvi broj");
+// let broj2 = +prompt("Unesite drugi broj");
+// let zbir = 0;
+// let brojac = 0;
+
+// if (isNaN(broj1) || isNaN(broj2)) {
+//   console.log("Niste uneli broj");
+// } else if (broj1 > broj2) {
+//   for (broj2; broj2 < broj1; broj2++) {
+//     // console.log(broj2);
+//     if (broj2 % 5 === 0) {
+//       //   console.log(broj2);
+//       zbir += broj2;
+//       brojac++;
+//     }
+//   }
+// } else if (broj1 < broj2) {
+//   for (broj1; broj1 < broj2; broj1++) {
+//     // console.log(broj1);
+//     if (broj1 % 5 === 0) {
+//       zbir += broj1;
+//       brojac++;
+//     }
+//   }
+// }
+// console.log(
+//   "Aritmeticka sredina brojeva koji su deljivi sa 5 iznosi: " + zbir / brojac
+// );
 
 // 2.
 // Korisnik unosi broj iz intervala [12,16).
