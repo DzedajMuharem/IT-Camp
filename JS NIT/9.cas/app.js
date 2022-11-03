@@ -61,10 +61,12 @@
 let broj = +prompt("Unesite broj iz intervala [12, 16)");
 const brojZaIspis = broj;
 
-for (broj; broj > 1; broj--) {
+for (broj; broj >= 1; broj--) {
   if (broj < 12 || broj > 16) {
-    console.log("Niste uneli korektna broj");
+    console.log("Niste uneli korektan broj");
+    break;
   }
+
   console.log(broj);
   console.log(broj ** 2);
   console.log(broj - 25);
