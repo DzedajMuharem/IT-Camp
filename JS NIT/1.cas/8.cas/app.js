@@ -145,3 +145,72 @@
 // Korisnik unosi broj iz intervala [12,16).
 // Na osnovu unetog broja, iteracija se vrsi od njega do 1(ukljucujuci).
 // Ispisati svaki broj iz iteracije, nljegov kvadrat i vrednost broja umanjenu za 25.
+
+let broj = +prompt("Unesite broj iz intervala [12,16).");
+let kvadrat = 0;
+let umanjeno = 0;
+
+switch (broj) {
+  case 15:
+    for (broj; broj >= 1; broj--) {
+      //   console.log(broj);
+      kvadrat = broj ** 2;
+      umanjeno = broj - 25;
+      console.log(
+        "Broj iz svake iteracije: " +
+          broj +
+          " njegov kvadrat: " +
+          kvadrat +
+          " umanjena vrijednost: " +
+          umanjeno
+      );
+    }
+    break;
+  case 14:
+    for (broj; broj >= 1; broj--) {
+      //   console.log(broj);
+      kvadrat = broj ** 2;
+      umanjeno = broj - 25;
+      console.log(
+        "Broj iz svake iteracije: " +
+          broj +
+          " njegov kvadrat: " +
+          kvadrat +
+          " umanjena vrijednost: " +
+          umanjeno
+      );
+    }
+    break;
+  case 13:
+    for (broj; broj >= 1; broj--) {
+      //   console.log(broj);
+      kvadrat = broj ** 2;
+      umanjeno = broj - 25;
+      console.log(
+        "Broj iz svake iteracije: " +
+          broj +
+          " njegov kvadrat: " +
+          kvadrat +
+          " umanjena vrijednost: " +
+          umanjeno
+      );
+    }
+    break;
+  case 12:
+    for (broj; broj >= 1; broj--) {
+      //   console.log(broj);
+      kvadrat = broj ** 2;
+      umanjeno = broj - 25;
+      console.log(
+        "Broj iz svake iteracije: " +
+          broj +
+          " njegov kvadrat: " +
+          kvadrat +
+          " umanjena vrijednost: " +
+          umanjeno
+      );
+    }
+    break;
+  default:
+    console.log("Niste uneli odgovarajuci broj");
+}
