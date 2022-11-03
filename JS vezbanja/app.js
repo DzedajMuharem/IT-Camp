@@ -1,4 +1,4 @@
-// Trebaju da se odrade: 4, 5,
+// Trebaju da se odrade:///
 
 // 1.
 //  Write a JavaScript for loop that will iterate from 0 to 15.
@@ -48,10 +48,26 @@
 // 4.
 // Write the java statement that assigns 1 to x if y is greater than 0
 
+// let x = +prompt("Unesite broj x");
+// let y = +prompt("Unesite broj y");
+// if (isNaN(x) || isNaN(y)) {
+//   console.log("Uneli ste nesto sto nije broj");
+// } else if (y > 0) {
+//   console.log((x += 1));
+// } else {
+//   console.log(x);
+// }
+
 // -------------------------------------------------//
 
 // 5.
 // Ispisati dvostruku vrijednost prirodnih brojeva od 10 do 6 unazad.
+
+// let vrijednoste = 0;
+// for (let e = 10; e > 6; e--) {
+//   vrijednoste = e * 2;
+//   console.log(vrijednoste);
+// }
 
 // -------------------------------------------------//
 
