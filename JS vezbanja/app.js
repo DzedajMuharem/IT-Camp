@@ -113,3 +113,26 @@
 // Write a JavaScript function to parameterize a string.
 // console.log(string_parameterize("Robin Singh from USA."));
 // "robin-singh-from-usa"
+
+// let recenicah = "Robin Singh from USA.";
+// let recenicahM = recenicah.toLowerCase();
+// let novaRecenica = "";
+
+// for (let h = 0; h < recenicahM.length; h++) {
+//   if (recenicahM[h] === " ") {
+//     novaRecenica += "-";
+//   } else {
+//     novaRecenica += recenicahM[h];
+//   }
+// }
+// console.log(novaRecenica);
+
+// 9.
+// Write a JavaScript function to find a word within a string.
+
+// ------------------------------------------------- //
+
+// 10.
+// Write a JavaScript function to repeat a string a specified times.
+
+// ------------------------------------------------- //
