@@ -17,22 +17,30 @@ let recenica2 = prompt("Unesite recenicu po izboru");
 let brojac2 = 0;
 
 for (let i = 0; i < recenica2.length; i++) {
-  if (
-    recenica2[i] === "1" ||
-    recenica2[i] === "2" ||
-    recenica2[i] === "3" ||
-    recenica2[i] === "4" ||
-    recenica2[i] === "5" ||
-    recenica2[i] === "6" ||
-    recenica2[i] === "7" ||
-    recenica2[i] === "8" ||
-    recenica2[i] === "9" ||
-    recenica2[i] === "0"
-  ) {
+  if (isNaN(recenica2[i])) {
+    continue;
+  } else {
     brojac2++;
   }
 }
 console.log(brojac2);
+// for (let i = 0; i < recenica2.length; i++) {
+//   if (
+//     recenica2[i] === "1" ||
+//     recenica2[i] === "2" ||
+//     recenica2[i] === "3" ||
+//     recenica2[i] === "4" ||
+//     recenica2[i] === "5" ||
+//     recenica2[i] === "6" ||
+//     recenica2[i] === "7" ||
+//     recenica2[i] === "8" ||
+//     recenica2[i] === "9" ||
+//     recenica2[i] === "0"
+//   ) {
+//     brojac2++;
+//   }
+// }
+// console.log(brojac2);
 
 // for (let i = 0; i < recenica2.length; i++) {
 //   a = parseInt(recenica2[i]);

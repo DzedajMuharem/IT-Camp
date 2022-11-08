@@ -25,9 +25,9 @@ console.log(11 % 3);
 console.log(12 % 3);
 
 // Uslov za parnost:
-// i % 2 = 0
+// i % 2 === 0
 // Uslov za neparnost
-// i % 2 = 1
+// i % 2 !== 0
 
 // 1.7 ++ increment (Povecava vrijednost za 1)
 let m = 5;
