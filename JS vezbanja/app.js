@@ -148,3 +148,18 @@
 //   return split_names[0];
 // };
 // console.log(abbrev_name("Robin Singh"));
+
+// 12.
+// Ispisati sve brojeve manje od 20, krenuvsi od broja koji unosi korisnik
+
+let broj = +prompt("Unesite broj <20");
+
+if (isNaN(broj)) {
+  console.log("Niste uneli broj");
+} else if (broj >= 20) {
+  console.log("Uneli se broj veci ili jednak 20");
+} else {
+  for (broj; broj < 20; broj++) {
+    console.log(broj);
+  }
+}
