@@ -152,14 +152,45 @@
 // 12.
 // Ispisati sve brojeve manje od 20, krenuvsi od broja koji unosi korisnik
 
-let broj = +prompt("Unesite broj <20");
+// let broj = +prompt("Unesite broj <20");
 
-if (isNaN(broj)) {
-  console.log("Niste uneli broj");
-} else if (broj >= 20) {
-  console.log("Uneli se broj veci ili jednak 20");
-} else {
-  for (broj; broj < 20; broj++) {
-    console.log(broj);
+// if (isNaN(broj)) {
+//   console.log("Niste uneli broj");
+// } else if (broj >= 20) {
+//   console.log("Uneli se broj veci ili jednak 20");
+// } else {
+//   for (broj; broj < 20; broj++) {
+//     console.log(broj);
+//   }
+// }
+
+// 12.
+// Dodaj tacku na kraju recenice
+
+// let recenica = "Neka recenica bez tacke";
+// let nova = "";
+
+// for (let i = 0; i <= recenica.length; i++) {
+//   if (recenica[i] === undefined) {
+//     nova += ".";
+//   } else {
+//     nova += recenica[i];
+//   }
+// }
+// console.log(nova);
+
+// 13.
+// Prebrojati koliko ima malih slova u unetom stringu. Slova koja se koriste u stringu
+// pripadaju isključivo engleskoj abecedi.
+
+let recenica = prompt("Recenica");
+let brojac = 0;
+
+for (let i = 0; i < recenica.length; i++) {
+  if (recenica[i] === ".") {
+    console.log("Uneli ste slovo koje nije u engleeskoj abecedi");
+  } else if (recenica[i] === recenica[i].toLowerCase()) {
+    brojac++;
   }
 }
+console.log(brojac);

@@ -31,7 +31,8 @@ prosekOcena = 4.14; //Preporucen nacin zapisivanje promenljivih
 prosek_ocena = 4.14; // Korektno
 ProskOcena = 4.14; //Korektno
 
-// Postoje 4 nacina za deklarisanje neke pormenljive:
+// POSTOJE 4 NACINA za deklarisanje neke pormenljive:
+
 // 1. dodeljivanje vrijednosti bez da smo prethodno izvrsili deklaraciju
 // prom = 12
 
