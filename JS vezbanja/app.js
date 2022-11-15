@@ -183,14 +183,39 @@
 // Prebrojati koliko ima malih slova u unetom stringu. Slova koja se koriste u stringu
 // pripadaju isključivo engleskoj abecedi.
 
+// let recenica = prompt("Recenica");
+// let brojac = 0;
+
+// for (let i = 0; i < recenica.length; i++) {
+//   if (recenica[i] === ".") {
+//     console.log("Uneli ste slovo koje nije u engleeskoj abecedi");
+//   } else if (recenica[i] === recenica[i].toLowerCase()) {
+//     brojac++;
+//   }
+// }
+// console.log(brojac);
+
+// 14.
+// Ispitati da li u unetom stringu ima više malih ili velikih slova.
+
 let recenica = prompt("Recenica");
-let brojac = 0;
+
+let brojac1 = 0;
+let broja2 = 0;
 
 for (let i = 0; i < recenica.length; i++) {
-  if (recenica[i] === ".") {
-    console.log("Uneli ste slovo koje nije u engleeskoj abecedi");
-  } else if (recenica[i] === recenica[i].toLowerCase()) {
-    brojac++;
+  if (recenica[i] === recenica[i].toLowerCase()) {
+    brojac1++;
+  } else if (recenica[i] === recenica[i].toUpperCase()) {
+    broja2++;
   }
 }
-console.log(brojac);
+if (brojac1 > broja2) {
+  console.log(
+    `U recenici ima vise malih slova: ${brojac1} nego velikih ${broja2}`
+  );
+} else if (broja2 > brojac1) {
+  console.log(
+    `U recenici ima vise velikih slova: ${broja2} nego malih ${brojac1}`
+  );
+}
