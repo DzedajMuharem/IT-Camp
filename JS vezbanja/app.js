@@ -198,24 +198,63 @@
 // 14.
 // Ispitati da li u unetom stringu ima više malih ili velikih slova.
 
-let recenica = prompt("Recenica");
+// let recenica = prompt("Recenica");
 
-let brojac1 = 0;
-let broja2 = 0;
+// let brojac1 = 0;
+// let broja2 = 0;
+
+// for (let i = 0; i < recenica.length; i++) {
+//   if (recenica[i] === recenica[i].toLowerCase()) {
+//     brojac1++;
+//   } else if (recenica[i] === recenica[i].toUpperCase()) {
+//     broja2++;
+//   }
+// }
+// if (brojac1 > broja2) {
+//   console.log(
+//     `U recenici ima vise malih slova: ${brojac1} nego velikih ${broja2}`
+//   );
+// } else if (broja2 > brojac1) {
+//   console.log(
+//     `U recenici ima vise velikih slova: ${broja2} nego malih ${brojac1}`
+//   );
+// }
+
+// 15.
+// Prebrojati koliko ima potvrdnih, upitnih i uzvičnih rečenica u unetom stringu.
+// Nekoliko uzastopnih znakova pitanja ili uzvika se računaju kao jedan, '!?' označava uzvičnu,
+// a '?!' upitnu rečenicu (gleda se samo prvi znak).
+// Uneti string je ispravan, u smislu da se po završetku svake rečenice ubacuje razmak.
+
+let recenica = prompt("Unesite vise recenica");
+let potvrdnih = 0;
+let upitnih = 0;
+let uzvičnih = 0;
 
 for (let i = 0; i < recenica.length; i++) {
-  if (recenica[i] === recenica[i].toLowerCase()) {
-    brojac1++;
-  } else if (recenica[i] === recenica[i].toUpperCase()) {
-    broja2++;
+  if (recenica[i] === "!" && recenica[i + 1] === "?") {
+    uzvičnih++;
+  } else if (recenica[i] === "?" && recenica[i - 1] === "!") {
+    continue;
+  } else if (recenica[i] === "?" && recenica[i + 1] === "!") {
+    upitnih++;
+  } else if (recenica[i] === "!" && recenica[i - 1] === "?") {
+    continue;
+  } else if (recenica[i] === "!" && recenica[i + 1] === "!") {
+    continue;
+  } else if (recenica[i] === "!") {
+    uzvičnih++;
+  } else if (recenica[i] === "?" && recenica[i + 1] === "?") {
+    continue;
+  } else if (recenica[i] === "?") {
+    upitnih++;
+  } else if (recenica[i] === "." && recenica[i + 1] === ".") {
+    continue;
+  } else if (recenica[i] === ".") {
+    potvrdnih++;
   }
 }
-if (brojac1 > broja2) {
-  console.log(
-    `U recenici ima vise malih slova: ${brojac1} nego velikih ${broja2}`
-  );
-} else if (broja2 > brojac1) {
-  console.log(
-    `U recenici ima vise velikih slova: ${broja2} nego malih ${brojac1}`
-  );
-}
+
+console.log(
+  `Upitnih ima ${upitnih}, uzvicnih ima ${uzvičnih}, potvrdnih ima ${potvrdnih}`
+);
