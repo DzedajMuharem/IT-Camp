@@ -226,35 +226,35 @@
 // a '?!' upitnu rečenicu (gleda se samo prvi znak).
 // Uneti string je ispravan, u smislu da se po završetku svake rečenice ubacuje razmak.
 
-let recenica = prompt("Unesite vise recenica");
-let potvrdnih = 0;
-let upitnih = 0;
-let uzvičnih = 0;
+// let recenica = prompt("Unesite vise recenica");
+// let potvrdnih = 0;
+// let upitnih = 0;
+// let uzvičnih = 0;
 
-for (let i = 0; i < recenica.length; i++) {
-  if (recenica[i] === "!" && recenica[i + 1] === "?") {
-    uzvičnih++;
-  } else if (recenica[i] === "?" && recenica[i - 1] === "!") {
-    continue;
-  } else if (recenica[i] === "?" && recenica[i + 1] === "!") {
-    upitnih++;
-  } else if (recenica[i] === "!" && recenica[i - 1] === "?") {
-    continue;
-  } else if (recenica[i] === "!" && recenica[i + 1] === "!") {
-    continue;
-  } else if (recenica[i] === "!") {
-    uzvičnih++;
-  } else if (recenica[i] === "?" && recenica[i + 1] === "?") {
-    continue;
-  } else if (recenica[i] === "?") {
-    upitnih++;
-  } else if (recenica[i] === "." && recenica[i + 1] === ".") {
-    continue;
-  } else if (recenica[i] === ".") {
-    potvrdnih++;
-  }
-}
+// for (let i = 0; i < recenica.length; i++) {
+//   if (recenica[i] === "!" && recenica[i + 1] === "?") {
+//     uzvičnih++;
+//   } else if (recenica[i] === "?" && recenica[i - 1] === "!") {
+//     continue;
+//   } else if (recenica[i] === "?" && recenica[i + 1] === "!") {
+//     upitnih++;
+//   } else if (recenica[i] === "!" && recenica[i - 1] === "?") {
+//     continue;
+//   } else if (recenica[i] === "!" && recenica[i + 1] === "!") {
+//     continue;
+//   } else if (recenica[i] === "!") {
+//     uzvičnih++;
+//   } else if (recenica[i] === "?" && recenica[i + 1] === "?") {
+//     continue;
+//   } else if (recenica[i] === "?") {
+//     upitnih++;
+//   } else if (recenica[i] === "." && recenica[i + 1] === ".") {
+//     continue;
+//   } else if (recenica[i] === ".") {
+//     potvrdnih++;
+//   }
+// }
 
-console.log(
-  `Upitnih ima ${upitnih}, uzvicnih ima ${uzvičnih}, potvrdnih ima ${potvrdnih}`
-);
+// console.log(
+//   `Upitnih ima ${upitnih}, uzvicnih ima ${uzvičnih}, potvrdnih ima ${potvrdnih}`
+// );
