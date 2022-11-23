@@ -258,3 +258,44 @@
 // console.log(
 //   `Upitnih ima ${upitnih}, uzvicnih ima ${uzvičnih}, potvrdnih ima ${potvrdnih}`
 // );
+
+// 16.
+// Write a JavaScript program to display the current day and time in the following format.
+// Sample Output : Today is : Tuesday.
+// Current time is : 10 PM : 30 : 38
+
+// const date = new Date();
+// let sati = date.getHours();
+// let minuti = date.getMinutes();
+// let sekunde = date.getSeconds();
+// let dan = date.getDay();
+// console.log(dan);
+// let satNovi = 0;
+// let recenicaDan = "";
+
+// if (dan === 0) {
+//   recenicaDan += "Danas je : Nedelja.";
+// } else if (dan === 1) {
+//   recenicaDan += "Danas je : Ponedeljak.";
+// } else if (dan === 2) {
+//   recenicaDan += "Danas je : Utorak.";
+// } else if (dan === 3) {
+//   recenicaDan += "Danas je : Srijeda.";
+// } else if (dan === 4) {
+//   recenicaDan += "Danas je : Cetvrtak";
+// } else if (dan === 5) {
+//   recenicaDan += "Danas je : Petak";
+// } else if (dan === 6) {
+//   recenicaDan += "Danas je : Subota";
+// }
+
+// let pmAm = sati >= 12 ? "PM" : "AM";
+// console.log(pmAm);
+// if (sati >= 12) {
+//   satNovi = sati - 12;
+// }
+
+// console.log(`Danas je : ${recenicaDan}`);
+// console.log(
+//   `Trenutno vrijeme je : ${satNovi} ${pmAm}  : ${minuti} : ${sekunde}`
+// );
