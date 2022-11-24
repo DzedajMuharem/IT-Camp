@@ -85,3 +85,49 @@ function povrsina(f, g) {
   }
 }
 console.log(povrsina(2, 2));
+
+// 2. Arrow function //
+
+// console myFunction = () => {
+//   // function code
+// }
+
+const proizvodDvaBroja = (br1, br2) => {
+  return br1 * br2;
+};
+console.log(proizvodDvaBroja(2, 16));
+
+// Ako arrow funkcija ima samo jedan parametar nije neophodno okruziti ga zagradama.
+
+// Ako je funckija jednostavna, tj. ako odmah vraca neki jednostavan izraz
+// onda sama sintaksa izgleda kraca(nije neophodno koristiti viticaste zagrade i return keyword)
+
+// const kvadratBroja = broj => return broj ** 2; NE RADI ZBOG PREEIERA, a moze
+
+const myFunction = () => {
+  let unetiBroj = +prompt("Unesite broj");
+
+  if (isNaN(unetiBroj)) {
+    return "Niste uneli broj";
+  } else if (unetiBroj === 0) {
+    return "Uneti broj je nula";
+  } else if (unetiBroj > 0) {
+    return "Unet je pozitivan broj";
+  } else if (unetiBroj < 0) {
+    return "Unet je negativan";
+  }
+};
+console.log(myFunction());
+
+// radno vreme 9-17
+
+let mail = function (satnica, minutnica) {
+  if (satnica >= 9 && satnica < 17 && minutnica >= 0 && minutnica < 60) {
+    return "Mail je stigao u toku radnog vrijemena";
+  } else {
+    return "Mail nije stigao u toku radnog vrijemena";
+  }
+};
+console.log(mail(15, 39));
+console.log(mail(7, 55));
+console.log(mail(15, 349));

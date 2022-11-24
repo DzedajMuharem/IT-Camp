@@ -305,18 +305,18 @@
 // Expected Output :
 // mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
 
-let date = new Date();
-let mesec = date.getMonth() + 1;
-let datum = date.getDate();
-let godina = date.getFullYear();
-if (mesec < 10) {
-  mesec = "0" + mesec;
-}
-if (datum < 10) {
-  datum = "0" + datum;
-}
+// let date = new Date();
+// let mesec = date.getMonth() + 1;
+// let datum = date.getDate();
+// let godina = date.getFullYear();
+// if (mesec < 10) {
+//   mesec = "0" + mesec;
+// }
+// if (datum < 10) {
+//   datum = "0" + datum;
+// }
 
-console.log(`${mesec}-${datum}-${godina}`);
-console.log(`${mesec}/${datum}/${godina}`);
-console.log(`${datum}-${mesec}-${godina}`);
-console.log(`${datum}/${mesec}/${godina}`);
+// console.log(`${mesec}-${datum}-${godina}`);
+// console.log(`${mesec}/${datum}/${godina}`);
+// console.log(`${datum}-${mesec}-${godina}`);
+// console.log(`${datum}/${mesec}/${godina}`);
