@@ -57,18 +57,87 @@ console.log(c);
 // funkcija treba vratiti poruku:
 // argument + njena duzina, 'nedovoljno za dalje ispitivanje'
 
-const zadatak = function (a) {
-  let novi = "";
-  let novi2 = "";
-  if (a.length > 9) {
-    novi = a.slice(a.length / 2, a.length);
-    novi = novi.toLowerCase();
-    novi2 = novi.replace(/a/g, "B");
-    return novi2.concat(
-      " Ovo je novodobijena recenica, od dve recenice i poslednjeg izmenjenog isecka"
-    );
+const mojaFukncija = function (recenica) {
+  if (recenica.length > 9) {
+    let polaDuzine;
+    // if (recenica.length % 2 === 0) {
+    //   polaDuzine = recenica.length / 2;
+    // } else if (recenica.length % 2 !== 0) {
+    //   polaDuzine = Math.ceil(recenica.length / 2);
+    // }
+    polaDuzine =
+      recenica.length % 2 === 0
+        ? recenica.length / 2
+        : Math.ceil(recenica.length / 2);
+    const isecak = recenica.slice(polaDuzine, recenica.length);
+    const novaRecenica = isecak.replace(/a/g, "B");
+    const konacno = "Ovo je novodobijena recenica, ".concat(novaRecenica);
+    return konacno;
   } else {
-    return a.concat(a.length, " nedovoljno za dalje ispitivanje");
+    const recenica2 = recenica.concat(
+      recenica.length,
+      "nedovoljno za dalje ispitivanje."
+    );
+    return recenica2;
   }
 };
-console.log(zadatak("Ovo je recenica sa mnogo karaktera"));
+console.log(mojaFukncija("Kraj casa"));
+console.log(mojaFukncija("Kraj 2. casa rada sa stringovima."));
+
+// Domaci zadatak.
+// Napraviti funkciju koja trazi od korisnika da unese neku recenicu, zatim funkcija vraca,
+//  datu recenicu u vise oblika (spojenu u jedan string).
+// 1. recenicu ispisanu velikim slovima,
+// 2. recenicu ispisanu malim slovima,
+// 3. pola recenice ispisano velikim slovima, pola recenice ispisano malim slovima
+// 4. Ako se u recenici nadje rec 'skola' neka bude zamenjena recju fakultet,
+// 5. Neka bude ispisano prvih 10 karaktera unete recenice,
+// 6. Neka bude ispisano poslednjih 10 karaktera unete recenice.
+
+const drugiZadatak = function () {
+  let unesiteRecenicu = prompt("Unesite recenicu");
+  let velikaSlova = unesiteRecenicu.toUpperCase();
+  let malaSlova = unesiteRecenicu.toLowerCase();
+  let polaMala = "";
+  let polaVelika = "";
+  if (unesiteRecenicu.length % 2 === 0) {
+    polaVelika = unesiteRecenicu.length / 2;
+  } else {
+    polaVelika = Math.ceil(unesiteRecenicu.length / 2);
+  }
+
+  const polaM = unesiteRecenicu.slice(0, polaVelika).toLowerCase();
+  const polaV = unesiteRecenicu
+    .slice(polaVelika, unesiteRecenicu.length)
+    .toUpperCase();
+  const polaPola = polaM + polaV;
+  let skola = unesiteRecenicu.replace("skola", "fakultet");
+  let prvih10 = unesiteRecenicu.substr(0, 10);
+  let poslednjih10 = unesiteRecenicu.substr(-10);
+
+  let ispis =
+    "2. recenicu ispisanu malim slovima: " +
+    malaSlova.concat(
+      "1. recenicu ispisanu velikim slovima: ",
+      "\n",
+      velikaSlova,
+      "\n",
+      "pola recenice ispisano velikim slovima, pola recenice ispisano malim slovima: ",
+      "\n",
+      polaPola,
+      "\n",
+      '4. Ako se u recenici nadje rec "skola" neka bude zamenjena recju fakultet: ',
+      "\n",
+      skola,
+      "\n",
+      "5. Neka bude ispisano prvih 10 karaktera unete recenice; ",
+      "\n",
+      prvih10,
+      "\n",
+      "6. Neka bude ispisano poslednjih 10 karaktera unete recenice: ",
+      "\n",
+      poslednjih10
+    );
+  return ispis;
+};
+console.log(drugiZadatak());
