@@ -98,7 +98,7 @@ const drugiZadatak = function () {
   let unesiteRecenicu = prompt("Unesite recenicu");
   let velikaSlova = unesiteRecenicu.toUpperCase();
   let malaSlova = unesiteRecenicu.toLowerCase();
-  let polaMala = "";
+  // let polaMala = "";
   let polaVelika = "";
   if (unesiteRecenicu.length % 2 === 0) {
     polaVelika = unesiteRecenicu.length / 2;
@@ -118,6 +118,7 @@ const drugiZadatak = function () {
   let ispis =
     "2. recenicu ispisanu malim slovima: " +
     malaSlova.concat(
+      "\n",
       "1. recenicu ispisanu velikim slovima: ",
       "\n",
       velikaSlova,
