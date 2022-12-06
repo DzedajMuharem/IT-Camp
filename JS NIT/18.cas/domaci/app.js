@@ -11,7 +11,7 @@ const limunadaZadatak = (zapremina, kolicina) => {
   let cifraDesetice = Math.trunc(((puneFlase * 1000) % 100) / 10);
   let cifraStotine = Math.trunc(((puneFlase * 1000) % 1000) / 100);
   let mililitri = `${cifraStotine}${cifraDesetice}${cifraJedinice2}`;
-  if (zapremina > 5 || kolicina > 50) {
+  if (zapremina > 5 || kolicina > 50 || zapremina <= 0 || kolicina <= 0) {
     return "Niste uneli korektne vrijednosti";
   } else if (dec3Zap < zapremina) {
     return "Zapremina flase ne sme imati vise od 3 decimale";
@@ -29,4 +29,4 @@ const limunadaZadatak = (zapremina, kolicina) => {
     );
   }
 };
-console.log(limunadaZadatak(3, 50));
+console.log(limunadaZadatak(1.5, 10));
