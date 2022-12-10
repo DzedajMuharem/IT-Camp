@@ -37,3 +37,9 @@ console.log(bezZnaka("Madagaskar", "a"));
 
 // Domaci zadatak:
 // Izdvojiti N znakova sa desne strane (poslednjih N znakova) unetog stringa. Npr. za string 'Pera ima devojku' i N=5, dobija se 'vojku'.
+
+const nFunkcija = (recenicaN, n) => {
+  let desnaStrana = recenicaN.substr(-n);
+  return desnaStrana;
+};
+console.log(nFunkcija("Pera ima devojku", 5));
