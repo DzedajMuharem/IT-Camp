@@ -320,3 +320,27 @@
 // console.log(`${mesec}/${datum}/${godina}`);
 // console.log(`${datum}-${mesec}-${godina}`);
 // console.log(`${datum}/${mesec}/${godina}`);
+
+// 18.  Write a JavaScript function to concatenates a given string n times (default is 1).
+
+// const function18 = (recenica, n) => {
+//   if (n) {
+//     return recenica.repeat(n);
+//   }
+// };
+// console.log(function18("rec", 6));
+
+// 19. Write a JavaScript program to create a new string from a given string taking the
+// last 3 characters and added at both the front and back. The string length must be 3 or more.
+
+// const function19 = (str1) => {
+//   let poslednja3 = str1.substring(str1.length - 3);
+//   let novi = poslednja3.concat(` ${str1} ${poslednja3}`);
+//   console.log(poslednja3);
+//   if (str1.length < 3) {
+//     return "string mora imati 3+ karaktera";
+//   } else {
+//     return novi;
+//   }
+// };
+// console.log(function19("radil ovo"));
