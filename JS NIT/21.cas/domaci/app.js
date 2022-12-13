@@ -12,9 +12,6 @@ function zadatak(recenica) {
       drugaNova += recenica[i];
     }
   }
-  console.log(nova);
-  console.log(recenica.length);
-  console.log(Math.floor(recenica.length / 2) + 1);
 
   for (e = 0; e < Math.ceil(recenica.length / 2); e++) {
     if (drugaNova[e] === undefined) {
@@ -25,7 +22,7 @@ function zadatak(recenica) {
   }
   return najNov;
 }
-console.log(zadatak("Ovovad"));
+console.log(zadatak("Ovovads"));
 
 ///////////////////////////////////////////////////
 
@@ -36,9 +33,7 @@ console.log(zadatak("Ovovad"));
 function novi(recenica1, recenica2) {
   let duzina = recenica1.length - 1 + recenica2.length;
   let novaRecenica = "";
-  // console.log(duzina)
-  // console.log(recenica1.length)
-  // console.log(recenica2.length)
+
   for (let c = 0; c < duzina; c++) {
     if (recenica1[c] === undefined || recenica2[c] === undefined) {
       continue;
@@ -54,4 +49,4 @@ function novi(recenica1, recenica2) {
 
   return novaRecenica;
 }
-console.log(novi("Nekada Ovo je visak", "nekada Ovo je visak Visak je i ovo"));
+console.log(novi("PERA", "sladoled"));
