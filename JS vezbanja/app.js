@@ -344,3 +344,48 @@
 //   }
 // };
 // console.log(function19("radil ovo"));
+
+// 20. Izracunati prosecnu vrednosti niza , ali izostavi najveci i najmanji element
+
+// let niz = [3, 30, 20, 2, 5];
+// let najveci = 0;
+// let najmanji = 0;
+// let najmanji2 = [];
+// let praviNajmanji = 0;
+// for (let i = 0; i < niz.length; i++) {
+//   if (niz[i] > niz[i + 1] && niz[i] > najveci) {
+//     najveci = niz[i];
+//   } else if (niz[i] < niz[i + 1]) {
+//     najmanji = niz[i];
+//   }
+// }
+// console.log(najmanji);
+
+//////////////////////////////////////////////////////////////////
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\/
+// function prosek(arr) {
+//   let x = arr.length;
+//   console.log(arr);
+//   for (i = 0; i < x; i++) {
+//     for (j = 0; j < x; j++) {
+//       if (arr[j] > arr[j + 1]) {
+//         [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+//       }
+//     }
+//   }
+//   console.log(arr);
+
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   let zbir = arr[0] + arr[arr.length - 1];
+//   console.log(zbir);
+//   prosek = sum - zbir;
+
+//   return prosek / arr.length;
+// }
+
+// console.log(prosek([13, 10, 11, 9]));
+
+//
