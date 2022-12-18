@@ -3,11 +3,12 @@
 // toString() pretvara broj u string.
 // Ova metoda pretvara bilo koji tip podatka u string.
 
-let x = 22;
+let x = 2222;
 console.log(x);
 console.log(typeof x);
 let y = x.toString();
-console.log(y);
+
+console.log(y.length);
 console.log(typeof y);
 console.log(y + x);
 
