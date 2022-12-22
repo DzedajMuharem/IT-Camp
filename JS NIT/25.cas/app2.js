@@ -26,16 +26,36 @@ console.log(zadatak31(2, 5, 0));
 // 32. Write a JavaScript program to find a value which is nearest to 100 from two different given integer values.
 
 const zadatak32 = (br1, br2) => {
-  if (br1 === br2) {
-    return "oba broja su podjednako udaljena od broja 100";
-  } else if (100 - br1 < 100 - br2) {
-    return "br1 je blizi broju 100";
-  } else if (100 - br1 > 100 - br2) {
-    return "br2 je blizi broju 100";
+  let brojac = 0;
+  let brojac1 = 0;
+  if (br1 >= 100) {
+    for (let i = br1; i >= 100; i--) {
+      brojac++;
+    }
+  } else for (i = br1; i <= 100; i++) brojac++;
+
+  if (br2 >= 100) {
+    for (let i = br2; i >= 100; i--) {
+      brojac1++;
+    }
+  } else for (i = br2; i <= 100; i++) brojac1++;
+  if (brojac > brojac1) {
+    return "drugi broj je blizi";
+  } else if (brojac < brojac1) {
+    return "Prvi broj je blizi";
   }
 };
-console.log(zadatak32(-99, -100));
-console.log(zadatak32(37, 20));
+console.log(zadatak32(165, 178));
+// const zadatak32 = (br1, br2) => {
+//   if (br1 === br2) {
+//     return "oba broja su podjednako udaljena od broja 100";
+//   } else if (100 - br1 < 100 - br2) {
+//     return "br1 je blizi broju 100";
+//   } else if (100 - br1 > 100 - br2) {
+//     return "br2 je blizi broju 100";
+//   }
+// };
+// console.log(zadatak32(65, 78));
 
 // 33. Write a JavaScript program to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
 
@@ -66,4 +86,4 @@ const zadatak34 = (br1, br2) => {
     return "uneti brojevi nisu izmedju 40 i 60";
   }
 };
-console.log(zadatak34(80, 40));
+console.log(zadatak34(50, 40));
