@@ -68,7 +68,7 @@ const zadatak33 = (br1, br2) => {
     return "Ne nalaze se u datim intervalima";
   }
 };
-console.log(zadatak33(70, 85));
+console.log(zadatak33(50, 85));
 
 // 34. Write a JavaScript program to find the larger number from the two given positive integers
 // the two numbers are in the range 40..60 inclusive.
