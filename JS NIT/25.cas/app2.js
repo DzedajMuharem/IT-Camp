@@ -59,31 +59,64 @@ console.log(zadatak32(165, 178));
 
 // 33. Write a JavaScript program to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
 
-const zadatak33 = (br1, br2) => {
-  if (br1 <= 60 && br1 >= 40 && br2 <= 60 && br2 >= 40) {
-    return "oba broja se nalaze izmedju 40/60";
-  } else if (br1 <= 100 && br1 >= 70 && br2 <= 100 && br2 >= 70) {
-    return "Oba broja se nalaze u intervalu od 70/100";
+function firstTask(num1, num2) {
+  if (
+    ((num1 >= 40 && num1 <= 60) || (num1 >= 70 && num1 <= 100)) &&
+    ((num2 >= 40 && num2 <= 60) || (num2 >= 70 && num2 <= 100))
+  ) {
+    return true;
   } else {
-    return "Ne nalaze se u datim intervalima";
+    return false;
   }
-};
-console.log(zadatak33(50, 85));
+}
+
+console.log(firstTask(45, 77));
+console.log(firstTask(39, 77));
+console.log(firstTask(39, 156));
+console.log(firstTask(80, 86));
+console.log(firstTask(45, 56));
+
+// const zadatak33 = (br1, br2) => {
+//   if (br1 <= 60 && br1 >= 40 && br2 <= 60 && br2 >= 40) {
+//     return "oba broja se nalaze izmedju 40/60";
+//   } else if (br1 <= 100 && br1 >= 70 && br2 <= 100 && br2 >= 70) {
+//     return "Oba broja se nalaze u intervalu od 70/100";
+//   } else {
+//     return "Ne nalaze se u datim intervalima";
+//   }
+// };
+// console.log(zadatak33(50, 85));
 
 // 34. Write a JavaScript program to find the larger number from the two given positive integers
 // the two numbers are in the range 40..60 inclusive.
 
-const zadatak34 = (br1, br2) => {
-  if (br1 <= 60 && br1 >= 40 && br2 <= 60 && br2 >= 40) {
-    if (br1 > br2) {
-      return "br1 je veci broj";
-    } else if (br1 < br2) {
-      return "br2 je veci broj";
-    } else {
-      return "brojevi su jednaki";
-    }
+function secondTask(num1, num2) {
+  if (num1 < 40 || num1 > 60 || num2 < 40 || num2 > 60) {
+    return `Niste poslali korektne brojeve.`;
+  } else if (num1 === num2) {
+    return `Brojevi su jednaki.`;
   } else {
-    return "uneti brojevi nisu izmedju 40 i 60";
+    const veciBroj = num1 > num2 ? num1 : num2;
+    return `Veci je broj ${veciBroj}.`;
   }
-};
-console.log(zadatak34(50, 40));
+}
+
+console.log(secondTask(4, 55));
+console.log(secondTask(44, 55));
+console.log(secondTask(74, 55));
+console.log(secondTask(60, 55));
+
+// const zadatak34 = (br1, br2) => {
+//   if (br1 <= 60 && br1 >= 40 && br2 <= 60 && br2 >= 40) {
+//     if (br1 > br2) {
+//       return "br1 je veci broj";
+//     } else if (br1 < br2) {
+//       return "br2 je veci broj";
+//     } else {
+//       return "brojevi su jednaki";
+//     }
+//   } else {
+//     return "uneti brojevi nisu izmedju 40 i 60";
+//   }
+// };
+// console.log(zadatak34(50, 40));
