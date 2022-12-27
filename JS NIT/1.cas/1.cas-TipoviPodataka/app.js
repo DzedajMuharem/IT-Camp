@@ -57,7 +57,7 @@ console.log(x === y); //razlikuju se
 
 //=========================================================/
 
-// NEPRIMITIVNI TIPOVI PODATAKA //
+// NEPRIMITIVNI TIPOVI PODATAKA - REFERENTNI //
 
 // Za promenljive(varijable) koje mogu skladistiti vise vrijednosti, ili neke kompleksne vrijednosti, se koriste
 // neprimitivni tipovi podatka
