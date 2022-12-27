@@ -59,3 +59,16 @@ console.log(zadatak3(10, 15));
 
 // 2 , 4 nzs je 4
 // 4, 5 nzs je 20
+
+const NZS = (broj1, broj2) => {
+  const nzsbroj = broj1 > broj2 ? broj1 : broj2;
+  let najmanjis;
+  for (let i = nzsbroj; i < Number.MAX_VALUE; i++) {
+    if (i % broj1 === 0 && i % broj2 === 0) {
+      najmanjis = i;
+      return `NZS brojeva ${broj1} i ${broj2} je ${najmanjis}`;
+      break;
+    }
+  }
+};
+console.log(NZS(2, 4));
