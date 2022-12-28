@@ -43,3 +43,16 @@ console.log(datenow);
 
 // Date.parse(neki datum) je metoda koja nam vraca broj milisekundi od 1.1.1970. do poslatog datuma
 console.log(Date.parse(rodjenjeDatum));
+
+// Napraviti funkciju koja racuna razliku u danima izmedju sledeca dva datuma:
+// "1999-05-24" i "2004-09-15"
+
+const zadatak = () => {
+  const datum1 = new Date(1999, 05, 24);
+  const datum2 = new Date(2004, 09, 15);
+  console.log(Date.parse(datum1));
+  console.log(Date.parse(datum2));
+  let dani = (Date.parse(datum2) - Date.parse(datum1)) / 86400000;
+  return `Razlika u danima iznosi ${dani} dana`;
+};
+console.log(zadatak());
