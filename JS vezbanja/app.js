@@ -406,3 +406,21 @@
 //   }
 // };
 // console.log(zadatak21(9));
+
+// 22. Write a JavaScript function to truncates a string if it is longer than the specified number of characters.
+//  Truncated strings will end with a translatable ellipsis sequence ("…") (by default) or specified characters.
+
+const zadatak22 = (string, ponavljanja) => {
+  let novaRecenica = "";
+  let defaultno = "...";
+  let kraj = string.substring(ponavljanja - defaultno.length, string.length);
+  if (string.length > ponavljanja) {
+    novaRecenica = string.replace(kraj, defaultno);
+    return novaRecenica;
+  } else {
+    return string;
+  }
+};
+console.log(zadatak22("Neka recenica sa karakterima", 6));
+console.log(zadatak22("Neka recenica sa karakterima", 22));
+console.log(zadatak22("Neka recenica sa karakterima", 70));
