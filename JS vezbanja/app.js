@@ -389,3 +389,20 @@
 // console.log(prosek([13, 10, 11, 9]));
 
 //
+
+// 21. Write a JavaScript function to humanized number (Formats a number to a human-readable string.)
+// with the correct suffix such as 1st, 2nd, 3rd or 4th.
+
+// const zadatak21 = (broj) => {
+//   let brojString = String(broj);
+//   if (brojString[brojString.length - 1] === "1") {
+//     return `${brojString}st`;
+//   } else if (brojString[brojString.length - 1] === "2") {
+//     return `${brojString}nd`;
+//   } else if (brojString[brojString.length - 1] === "3") {
+//     return `${brojString}rd`;
+//   } else {
+//     return `${brojString}th`;
+//   }
+// };
+// console.log(zadatak21(9));
