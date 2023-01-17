@@ -26,11 +26,11 @@ function zadatak2() {
   drugiNiz.unshift(10, 20);
 
   return `[ ${drugiNiz} ],
-  [ ${obaNiza} ]`;
+[ ${obaNiza} ]`;
 }
 console.log(zadatak2());
-// 1.
 
+// 1.
 function zadatak1(niz) {
   let noviNiz = [];
   for (let i of niz) {
