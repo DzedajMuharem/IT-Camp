@@ -39,7 +39,7 @@ const radnik = {
     grad: 'Novi Pazar',
     getAdress: function () {
       // vraca Dzenan Kosuta zivi u ulici Avnoja u Novom Pazaru.
-      return `${radnik.firstName} ${radnik.lastName} zivi u ulici ${radnik.adresa.ulica} u ${radnik.adresa.grad}`;
+      return `${radnik.firstName} ${radnik.lastName} zivi u ulici ${this.ulica} u ${this.grad}`;
     },
   },
 };
@@ -52,7 +52,7 @@ const automobil = {
   pogon: 'quattro',
   menjac: 'Automatik',
   km: 240000,
-  vlasnik: [062321552, 063930630],
+  vlasnik: [062321552, 0630123],
   garaza: {
     parking: 'JKP Servis',
     vikend: 'od 17 free',
@@ -63,8 +63,6 @@ const automobil = {
       const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
       const firstDate = new Date(od);
       const secondDate = new Date(to);
-      console.log(firstDate);
-      console.log(secondDate);
 
       const diffDays =
         Math.round(Math.abs((firstDate - secondDate) / oneDay)) *
