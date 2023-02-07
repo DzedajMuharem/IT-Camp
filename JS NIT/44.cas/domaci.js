@@ -91,7 +91,7 @@ const grupa = [
 
 const zadatak1 = function (array) {
   return array.filter(
-    obj => obj.bojaOciju === 'braon' && obj.polozenC === false
+    obj => obj.bojaOciju === 'braon' && obj.polozenC === false // !obj.polozenC
   );
 };
 console.log(zadatak1(grupa));
@@ -241,8 +241,11 @@ const getRating = function (array) {
   const ratingToNum = ratings.map(x => Number(x));
   const overall =
     ratingToNum.reduce((acc, val) => acc + val) / ratingToNum.length;
+  //   const suma =
+  //     arrayFilter.reduce((acc, cur) => acc + Number(cur.imdbRating), 0) /
+  //     arrayFilter.length;
 
-  return `Average IMDB rating of the movies directed by ${arrayFilter[0].Director}: ${overall} `;
+  return `Average IMDB rating of the movies directed by ${arrayFilter[0].Director}: ${suma} `;
 };
 
 console.log(getRating(watchList));
