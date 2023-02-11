@@ -424,3 +424,20 @@
 // console.log(zadatak22("Neka recenica sa karakterima", 6));
 // console.log(zadatak22("Neka recenica sa karakterima", 22));
 // console.log(zadatak22("Neka recenica sa karakterima", 70));
+
+// 23 U niz A od N  elemenata treba umetnuti novi element X, posle prvog elementa koji je veci od X ili na kraj niza ako takav elemenata ne postoji
+// Za uneto X=80 i niz, dobija se [57,30,95,80,17,22]
+const zadatak23 = [57, 30, 17, 22];
+
+const zadatak23F = function (arr, num) {
+  for (let i = 0; i < zadatak23.length; i++) {
+    if (zadatak23[i] > num) {
+      zadatak23.splice(i + 1, 0, num);
+      return zadatak23;
+    } else if (zadatak23[i] < num && zadatak23[i + 1] === undefined) {
+      zadatak23.push(num);
+      return zadatak23;
+    }
+  }
+};
+console.log(zadatak23F(zadatak23, 80));
