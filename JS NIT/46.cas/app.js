@@ -153,12 +153,27 @@ console.log(move([10, 20, 30, 40, 50], 0, 2));
 // Test Data :
 // console.log(nthlargest([ 43, 56, 23, 89, 88, 90, 99, 652], 4));
 // 89
-
+const zadatak1 = [43, 56, 23, 89, 88, 90, 99, 652];
+console.log(zadatak1.sort((a, b) => b - a));
+const nthlargest = function (arr, num) {
+  const sorted = arr.sort((a, b) => b - a);
+  return sorted[num - 1];
+};
+console.log(nthlargest(zadatak1, 4));
 // 39. Write a JavaScript function to filter false, null, 0 and blank values from an array. Go to the editor
 
 // Test Data :
 // console.log(filter_array_values([58, '', 'abcd', true, null, false, 0]));
 // [58, "abcd", true]
+const zadatak2 = [58, '', 'abcd', true, null, false, 0];
+const filter_array_values = function (arr) {
+  let noviNiz = [];
+  arr.filter(x => {
+    if (x) noviNiz.push(x);
+  });
+  return noviNiz;
+};
+console.log(filter_array_values(zadatak2));
 
 // 16. Write a JavaScript function to get a copy of the object where the keys have become the values and the values the keys.
 
@@ -169,3 +184,10 @@ const student = {
   sclass: 'VI',
   rollno: 12,
 };
+
+const length = function (object) {
+  const zadatak4 = [];
+  zadatak4.push(Object.keys(student));
+  return `Length of object is ${zadatak4.flat().length}`;
+};
+console.log(length(student));
