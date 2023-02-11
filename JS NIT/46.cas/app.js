@@ -176,7 +176,21 @@ const filter_array_values = function (arr) {
 console.log(filter_array_values(zadatak2));
 
 // 16. Write a JavaScript function to get a copy of the object where the keys have become the values and the values the keys.
-
+const keysToValues = obj => {
+  const keys = Object.keys(obj);
+  const values = Object.values(obj);
+  const newObj = {};
+  for (let i = 0; i <= values.length - 1; i++) {
+    newObj[values[i]] = keys[i];
+  }
+  return newObj;
+};
+// const student = {
+//   name: "David Rayy",
+//   sclass: "VI",
+//   rollno: 12,
+// };
+// console.log(keysToValues(student));
 // 3. Write a JavaScript program to get the length of a JavaScript object. Go to the editor
 // Sample object :
 const student = {
