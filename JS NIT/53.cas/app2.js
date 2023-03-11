@@ -29,6 +29,11 @@ zadatak1
   .catch(err => console.log(err))
   .finally(() => console.log('Promise je zavrsena'));
 
+// Domaci:
+// Napraviti promise koji proverava da li je neki objekat ispunio uslova da je njegov property godine veci od 17 ili nije.
+// U slucaju da je osoba punoletna then() funkcija vraca poruku "Vi ste punoletni".
+// U slucaju da osoba nije punoletna catch() vraca broj godina osobe.
+
 const zadatak2 = new Promise((resolve, reject) => {
   const objekat = {
     firstName: 'Hasan',
@@ -38,6 +43,11 @@ const zadatak2 = new Promise((resolve, reject) => {
   if (objekat.age >= 18) resolve('Punoletni ste');
   else reject(objekat.age);
 });
+
+// Napraviti funkciju koja sadrzi Promise koji proverava da li poslati argument funkcije ima vise od 10 samoglasnika.
+// Ako argument ima vise od 10 samoglasnika neka se uspesno izvrsi obecanje sa porukom "String zadovoljava uslov";
+// ako argument ima manje od 11 samoglasnika neka se reject_a obecanje uz poruku "String ne zadovoljava uslov";
+// U svakom slucaju neka stoji poruka "Funkcija je uspesno izvrsena".
 
 zadatak2.then(msg => console.log(msg)).catch(err => console.log(err));
 
