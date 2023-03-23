@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  margin: auto;
+  background-color: rgb(101, 93, 93);
+  width: 60vw;
+  height: 12vh;
+}
+h1 {
+  text-align: center;
+}
+
+.textBTN {
+  text-align: center;
+}
+.textBTN input {
+  width: 60%;
+  padding: 5px;
+}
+.textBTN button {
+  width: 12%;
+  padding: 5px;
+}
+article {
+  margin: auto;
+
+  text-align: center;
+  width: 60vw;
+  background-color: rgb(192, 46, 46);
+  padding: 20px;
+}
+
+article li {
+  list-style: none;
+  width: 90%;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: rgb(101, 99, 99);
+}
+article li:hover {
+  background-color: rgb(166, 147, 147);
+}
+article button {
+  color: red;
+  text-align: end;
+}
+article li:nth-child(odd) {
+  background-color: rgb(82, 71, 71);
+}
+article li:nth-child(odd):hover {
+  background-color: rgb(166, 147, 147);
+}
+article button:hover {
+  background-color: rgb(166, 147, 147);
+}
