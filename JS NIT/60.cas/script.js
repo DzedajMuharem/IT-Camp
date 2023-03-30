@@ -1,7 +1,9 @@
+const lista = document.querySelector('.mainBody');
+const brid = document.querySelector('.brid');
+const slika = document.querySelector('.slika');
+const title = document.querySelector('.title');
+///////////////////
 const getVideos = async () => {
-  const lista = document.querySelector('.mainBody');
-  ///////////////////
-
   const response = await fetch(
     'https://services.brid.tv/services/get/latest/26456/0/1/25/0.json'
   );
@@ -38,19 +40,39 @@ const getVideos = async () => {
     lista.innerHTML += `<li>
     <div class="kartica">
       <img
+      onclick="loadVideo(this)"
         class="slika"
         src=${element.thumbnail}
         alt=""
+        id="${element.id}"
       />
-      <div class="donjideo">
-       
-        <div class="tekst">
-          <p class="prvitekst">${element.name}</p>
-          <p class="ime">${time(element.duration)}</p>
-        </div>
+      <div class="donjideo" >
+       <p class="title"  onclick="loadVideo(this)" id="${element.id}">${
+      element.name
+    }</p>
+          <p class="duration">${time(element.duration)}</p>
       </div>
     </div>
   </li>`;
   });
 };
 getVideos();
+
+let player = $bp('DIV_ID', {
+  id: '26456',
+  width: '640',
+  height: '480',
+  video: `1272195`,
+});
+
+function loadVideo(element) {
+  // let nesto = element.parentElement;
+  // console.log(nesto.parentElement.id);
+  console.log(element.id);
+  $bp('DIV_ID', {
+    id: '26456',
+    width: '640',
+    height: '480',
+    video: `${element.id}`,
+  });
+}
